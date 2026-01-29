@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Healthme Vibes</title>
+  <style>
+    :root{--accent:#2b8a78;--muted:#666;--bg:#ffffff;--max-width:980px;--radius:8px}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:#222;background:var(--bg);line-height:1.45}
+    .wrap{max-width:var(--max-width);margin:0 auto;padding:1rem}
+    .site-header{background:linear-gradient(90deg,#eaf6f3,#ffffff);padding:1rem 0;border-bottom:1px solid #eee}
+    .site-title{margin:.2rem 0;font-size:1.4rem}
+    .site-tagline{margin:0;color:var(--muted);font-size:.95rem}
+    .main-nav{margin-top:.6rem}
+    .main-nav a{margin-right:.65rem;color:var(--accent);text-decoration:none}
+    .main-nav a.active{font-weight:700}
+    .hero{padding:2rem 0}
+    .hero h2{margin:.2rem 0;font-size:1.6rem}
+    .cta{display:inline-block;margin-top:.6rem;padding:.5rem .9rem;background:var(--accent);color:white;border-radius:6px;text-decoration:none}
+    .intro{margin-top:1.2rem;color:var(--muted)}
+    .provider-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+    .provider-card{display:block;padding:1rem;border:1px solid #eee;border-radius:var(--radius);text-decoration:none;color:inherit;background:#fff;transition:transform .12s,box-shadow .12s}
+    .provider-card:hover{transform:translateY(-4px);box-shadow:0 8px 18px rgba(20,30,40,.06)}
+    .site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem;color:var(--muted);font-size:.9rem;text-align:center}
+    @media (max-width:520px){.site-title{font-size:1.1rem}.hero h2{font-size:1.2rem}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="site-title">Healthme Vibes</h1>
+      <p class="site-tagline">Connecting Laramie with healing arts practitioners.</p>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#providers">Providers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <h2>Explore Laramie's Healing Community</h2>
+      <p>Your free directory of local wellness, mind-body, and holistic practitioners.</p>
+      <p><a class="cta" href="#providers">Browse Providers</a></p>
+    </section>
+
+    <section class="intro" id="about">
+      <h3>About this directory</h3>
+      <p>Healthme Vibes is a community-run directory listing local wellness practitioners in Laramie. If you’re a provider or looking for services, explore the listings or reach out via the Contact section below.</p>
+    </section>
+
+    <section id="providers">
+      <h2>Providers</h2>
+      <p>Browse the community list.</p>
+      <div class="provider-grid">
+        <!-- Example provider card — duplicate this block to add more -->
+        <a class="provider-card" href="#" aria-label="Sample Provider">
+          <h3>Sample Provider</h3>
+          <p>Massage Therapy · Holistic Wellness</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:1.5rem">
+      <h3>Contact</h3>
+      <p>If you are a practitioner who wants to be listed or someone who needs help finding services, email: <a href="mailto:hello@healthmevibes.org">hello@healthmevibes.org</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2026 Healthme Vibes</div>
+  </footer>
+</body>
+</html>
